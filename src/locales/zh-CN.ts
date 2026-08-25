@@ -113,6 +113,7 @@ export const zhCN: Readonly<Record<string, string>> = {
   'Open Trades': '持仓交易',
   'Open trades': '持仓交易',
   'Closed Trades': '已结束交易',
+  History: '交易历史',
   'Trade history': '交易历史',
   'Trade Detail': '交易详情',
   'Currently no open trades.': '当前没有持仓交易。',
