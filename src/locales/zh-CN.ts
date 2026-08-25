@@ -52,7 +52,14 @@ export const zhCN: Readonly<Record<string, string>> = {
   'Logout confirmation': '确认退出',
 
   // Home and common actions
+  'Welcome to the': '欢迎使用',
   'This page allows you to control your trading bot.': '此页面用于控制你的交易机器人。',
+  'If you need any help, please refer to the': '如需帮助，请参阅',
+  'Freqtrade Documentation': 'Freqtrade 文档',
+  'Have fun -': '祝你使用愉快——',
+  'wishes you the Freqtrade team': 'Freqtrade 团队',
+  'Toggle Night Mode': '切换夜间模式',
+  'Confirm Dialog deactivated.': '确认对话框已关闭。',
   'Refresh': '刷新',
   Reload: '重新加载',
   Save: '保存',
