@@ -1,7 +1,7 @@
 FROM node:26.7.0-alpine AS ui-builder
 
 RUN mkdir /app \
-    && corepack enable
+    && npm install --global pnpm@11.22.0
 
 WORKDIR /app
 
