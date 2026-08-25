@@ -1,0 +1,18 @@
+---
+services:
+  frequi-zh:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lienchan666/frequi:zh-cn
+    container_name: frequi-zh
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${FREQUI_ZH_PORT:-8083}:80"
+    networks:
+      - freqtrade
+
+networks:
+  freqtrade:
+    name: freqtrade_default
+    external: true

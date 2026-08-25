@@ -4,6 +4,7 @@ import ui from '@nuxt/ui/vue-plugin';
 
 import App from './App.vue';
 import { VueDraggableGrid } from './plugins/vue-grid-layout';
+import { installZhCN } from './plugins/zh-cn';
 import router from './router';
 import './styles/tailwind.css';
 
@@ -20,3 +21,4 @@ myApp.use(VueDraggableGrid);
 
 // Vue.config.productionTip = false;
 myApp.mount('#app');
+installZhCN();

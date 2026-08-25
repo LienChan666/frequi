@@ -28,7 +28,7 @@ use([
 ]);
 
 // Define Column labels here to avoid typos
-const CHART_PROFIT = 'Trade count';
+const CHART_PROFIT = '交易数';
 
 const props = withDefaults(
   defineProps<{
@@ -61,7 +61,7 @@ const data = computed(() => {
 const chartOptions = computed((): EChartsOption => {
   const chartOptionsLoc: EChartsOption = {
     title: {
-      text: 'Profit distribution',
+      text: '收益分布',
       left: 'center',
       show: props.showTitle,
     },
@@ -86,7 +86,7 @@ const chartOptions = computed((): EChartsOption => {
     },
     xAxis: {
       type: 'category',
-      name: 'Profit %',
+      name: '收益率',
       nameLocation: 'middle',
       nameGap: 25,
     },

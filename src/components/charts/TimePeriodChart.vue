@@ -47,9 +47,9 @@ const props = withDefaults(
 
 // Define Column labels here to avoid typos
 const CHART_PROFIT = computed(() =>
-  props.profitCol === 'abs_profit' ? 'Absolute profit' : 'Relative profit',
+  props.profitCol === 'abs_profit' ? '绝对收益' : '相对收益',
 );
-const CHART_TRADE_COUNT = 'Trade Count';
+const CHART_TRADE_COUNT = '交易数';
 
 const settingsStore = useSettingsStore();
 const colorStore = useColorStore();
@@ -101,7 +101,7 @@ const colorStops: LinearGradientObject = {
 const dailyChartOptions: ComputedRef<EChartsOption> = computed(() => {
   return {
     title: {
-      text: 'Daily profit',
+      text: '每日收益',
       show: props.showTitle,
     },
     backgroundColor: 'rgba(0, 0, 0, 0)',

@@ -34,7 +34,7 @@ use([
 ]);
 
 // Define Column labels here to avoid typos
-const CHART_PROFIT = 'Profit %';
+const CHART_PROFIT = '收益率';
 const CHART_COLOR = '#9be0a8';
 
 const props = withDefaults(
@@ -76,7 +76,7 @@ const chartOptions = computed((): EChartsOption => {
   const datazoomStart = chartData.value.length > 0 ? (1 - 50 / chartData.value.length) * 100 : 100;
   return {
     title: {
-      text: 'Trades log',
+      text: '交易记录',
       left: 'center',
       show: props.showTitle,
     },

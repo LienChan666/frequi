@@ -39,7 +39,7 @@ use([
 ]);
 
 // Define Column labels here to avoid typos
-const CHART_PROFIT = 'Profit';
+const CHART_PROFIT = '收益';
 
 const props = withDefaults(
   defineProps<{
@@ -210,7 +210,7 @@ const cumProfitChartOptions: ComputedRefWithControl<EChartsOption> = computedWit
   () => {
     const chartOptionsLoc: EChartsOption = {
       title: {
-        text: 'Cumulative Profit',
+        text: '累计收益',
         left: 'center',
         show: props.showTitle,
       },

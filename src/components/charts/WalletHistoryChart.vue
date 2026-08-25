@@ -36,7 +36,7 @@ use([
 
 const colorStore = useColorStore();
 // Define Column labels here to avoid typos
-const CHART_WALLET_HISTORY = 'Wallet history';
+const CHART_WALLET_HISTORY = '钱包历史';
 const SERIES_COLORS = ['#1d4ed8', '#d931e5', '#059669', '#b45309', '#be123c', '#7c3aed', '#0f766e'];
 
 const props = withDefaults(
@@ -126,7 +126,7 @@ const walletHistoryOptions: ComputedRef<EChartsOption> = computed(() => {
 
     const markLineData: MarkLineComponentOption['data'] = [
       {
-        name: 'Starting balance',
+        name: '初始余额',
         yAxis: startingValue,
         emphasis: { disabled: true },
         label: {
@@ -137,7 +137,7 @@ const walletHistoryOptions: ComputedRef<EChartsOption> = computed(() => {
         },
       },
       {
-        name: 'Zero',
+        name: '零线',
         label: {
           show: false,
         },
@@ -151,7 +151,7 @@ const walletHistoryOptions: ComputedRef<EChartsOption> = computed(() => {
 
     if (shouldShowCaptureLine) {
       markLineData.push({
-        name: 'Capture start',
+        name: '记录起点',
         xAxis: captureStartTs,
         emphasis: { disabled: true },
         label: {
@@ -239,7 +239,7 @@ const walletHistoryOptions: ComputedRef<EChartsOption> = computed(() => {
 
   const option: EChartsOption = {
     title: {
-      text: 'Wallet Balance',
+      text: '钱包余额',
       left: 'center',
       show: props.showTitle,
     },

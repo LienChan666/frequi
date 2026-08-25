@@ -36,7 +36,7 @@ use([
 ]);
 
 // Define Column labels here to avoid typos
-const CHART_MARKET_CHANGE = 'Market change %';
+const CHART_MARKET_CHANGE = '市场涨跌幅';
 
 const props = withDefaults(
   defineProps<{
@@ -61,7 +61,7 @@ const marketChangeOptions: ComputedRef<EChartsOption> = computed(() => {
   const colRelMean = props.marketChangeData.columns.findIndex((el) => el === 'rel_mean');
   return {
     title: {
-      text: 'Market change %',
+      text: '市场涨跌幅',
       left: 'center',
       show: props.showTitle,
     },

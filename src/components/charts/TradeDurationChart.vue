@@ -70,7 +70,7 @@ const losingTrades = computed(() => {
 const chartOptions = computed((): EChartsOption => {
   return {
     title: {
-      text: 'Trades durations',
+      text: '交易持仓时长',
       left: 'center',
       show: props.showTitle,
     },
@@ -113,7 +113,7 @@ const chartOptions = computed((): EChartsOption => {
     yAxis: [
       {
         type: 'value',
-        name: 'Trade duration',
+        name: '持仓时长',
         splitArea: {
           show: true,
         },
@@ -167,7 +167,7 @@ const chartOptions = computed((): EChartsOption => {
     ],
     series: [
       {
-        name: 'Trade durations',
+        name: '持仓时长',
         type: 'boxplot',
         datasetId: 'allTradesBoxplot',
         colorBy: 'data',
